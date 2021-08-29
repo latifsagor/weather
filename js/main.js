@@ -12,7 +12,7 @@ searchInputBox.addEventListener('keypress', (event) => {
     if(event.keyCode == 13){
         console.log(searchInputBox.value);
         getWeatherReport(searchInputBox.value);
-        document.querySelector('.weather-body').style.display = "block";
+        // document.querySelector('.weather-body').style.display = "block";
     }      
 });
 
