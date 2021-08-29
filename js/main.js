@@ -9,14 +9,12 @@ const searchInputBox = document.getElementById('input-box');
 
 // Event listener function on keypress
 searchInputBox.addEventListener('keypress', (event) => {
-
     if(event.keyCode == 13){
         console.log(searchInputBox.value);
         getWeatherReport(searchInputBox.value);
         document.querySelector('.weather-body').style.display = "block";
-    }    
+    }      
 });
-
 
 // get weather report
 function getWeatherReport(city){
